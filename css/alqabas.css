@@ -1342,3 +1342,130 @@ header .single-artical {
 /* End sign in */
 
 /*************************** End sign in page *****************************/
+
+/*************************** Start My Profile page *****************************/
+.my-profile {
+}
+.my-profile .slid-bar {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 100%;
+}
+
+.my-profile .slid-bar i {
+  font-size: 100px;
+  border: 3px solid white;
+  padding: 50px 60px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .my-profile .slid-bar i {
+    font-size: 50px;
+    padding: 20px 25px;
+  }
+}
+
+.my-profile .slid-bar .links ul li a {
+  color: white !important;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .my-profile .slid-bar .links ul li a {
+    font-size: 18px !important;
+  }
+}
+.my-profile .slid-bar .links ul li a::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  bottom: -10px;
+  transition-duration: 0.5s;
+}
+.my-profile .slid-bar .links ul li a:hover:before,
+.my-profile .slid-bar .links ul li.active a::before {
+  width: 100%;
+}
+.profile {
+  padding-bottom: 100px;
+}
+
+@media (max-width: 425px) {
+  .profile .profile-header {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center !important;
+  }
+}
+.profile .profile-header .title {
+  font-size: 50px;
+}
+.profile .profile-header i {
+  font-size: 70px;
+  border: 3px solid black;
+  padding: 40px 50px;
+  border-radius: 50%;
+}
+
+.profile .profile-form {
+  margin-top: 20px;
+}
+.profile .profile-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.profile .profile-form form .box {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 425px) {
+  .profile .profile-form form .box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+.profile .profile-form form label {
+  width: 30%;
+  font-weight: bold;
+}
+.profile .profile-form form input:not(input[type="submit"]) {
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 40px;
+  direction: rtl;
+}
+.profile .profile-form form input[type="submit"] {
+  width: fit-content;
+  padding: 5px 50px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 40px;
+  border: none;
+  margin-right: auto;
+}
+@media (max-width: 425px) {
+  .profile .profile-form form label {
+    width: 100% !important;
+  }
+}
+@media (max-width: 768px) {
+  .profile .profile-form form label {
+    width: 50%;
+  }
+  .profile .profile-form form input:not(input[type="submit"]) {
+    font-size: 15px;
+  }
+}
+
+/*************************** End My Profile page *****************************/

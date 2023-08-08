@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تسجيل الدخول - دار القبس للنشر والتوزيع</title>
+    <title>حسابي - دار القبس للنشر والتوزيع</title>
     <link rel="icon" href="img/Artboard 2.png">
     <link rel="stylesheet" href="css/alqabas.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -84,44 +84,62 @@
     </header>
     <!-- End Header -->
 
-
-    <!-- Start sign in -->
-    <div class="login sign-in my-5">
+    <!-- Start My profile -->
+    <div class="my-profile">
         <div class="container">
-            <div class="sign-in-header">
-                <h1 class="title">تسجيل الدخول</h1>
-                <i class="fa-regular fa-circle-user log-in"></i>
-            </div>
-            <div class="form">
-                <form action="" method="post">
-                    <!-- <div class="box username">
-                        <label for="username">إسم المستخدم :</label>
-                        <input type="text" name="username" id="" placeholder="إسم المستخدم">
-                    </div> -->
-                    <div class="box email">
-                        <label for="email">البريد الإلكتروني :</label>
-                        <input type="email" name="email" id="" placeholder="البريد الإلكتروني">
-                    </div>
-                    <div class="box password">
-                        <label for="password">كلمة المرور :</label>
-                        <input type="password" name="password" id="" placeholder="كلمة المرور">
-                    </div>
-                    <div class="checkbox-submit d-flex justify-content-between align-items-start">
-                        <div class="check">
-                            <label for="checkbox"> <a href="" class="text-decoration-none fw-bold">نسيت كلمة
-                                    المرور؟</a></label>
+            <div class="row justify-content-center align-items-strat g-5">
+                <div class="col-12 col-sm-4 text-center">
+                    <div class="slid-bar">
+                        <i class="fa-regular fa-user"></i>
+                        <div class="links mt-5">
+                            <ul class="mb-0 d-flex flex-column justify-content-center align-items-center gap-4">
+                                <li class="active"><a class="text-decoration-none fs-4" href="">حسابي</a></li>
+                                <li><a class="text-decoration-none fs-4" href="">مقالاتي</a></li>
+                                <li><a class="text-decoration-none fs-4" href="">مفضلتي</a></li>
+                                <li><a class="text-decoration-none fs-4" href="">تسجيل الخروج</a></li>
+                            </ul>
                         </div>
-                        <input type="submit" value="تسجيل الدخول">
                     </div>
-                </form>
-                <div class="login">
-                    <p class="fw-semibold ">ليس لديك حساب ؟ <a href="sign-in.html" class="text-decoration-none">سجل
-                            الآن</a></p>
+                </div>
+                <div class="profile col-12 col-sm-8">
+                    <div class="profile-header mt-5 d-flex justify-content-between align-items-start">
+                        <h1 class="title fw-semibold">حسابي</h1>
+                        <div class="image">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="profile-form">
+                        <form action="" method="post">
+                            <div class="box username">
+                                <label for="username">إسم المستخدم :</label>
+                                <input type="text" name="username" id="" placeholder="إسم المستخدم">
+                            </div>
+                            <div class="box firtsname">
+                                <label for="firtsname">إسم الأول :</label>
+                                <input type="text" name="firtsname" id="" placeholder="إسم الأول">
+                            </div>
+                            <div class="box lastname">
+                                <label for="lastname">إسم العائلة :</label>
+                                <input type="text" name="lastname" id="" placeholder="إسم العائلة">
+                            </div>
+                            <div class="box email">
+                                <label for="email">البريد الإلكتروني :</label>
+                                <input type="email" name="email" id="" placeholder="البريد الإلكتروني">
+                            </div>
+                            <div class="box password">
+                                <label for="password">كلمة المرور :</label>
+                                <input type="password" name="password" id="" placeholder="كلمة المرور">
+                            </div>
+                            <input type="submit" value="حفظ">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End sign in -->
+    <!-- End My profile -->
+
+
 
 
 
@@ -185,7 +203,6 @@
     <!-- <script src="js/all.min.js"></script> -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/alqabas.js"></script>
-
 
 
 </body>
