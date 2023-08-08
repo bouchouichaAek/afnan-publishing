@@ -1324,6 +1324,15 @@ header .single-artical {
     font-size: 12px;
   }
 }
+.sign-in .login {
+}
+.sign-in .login a {
+  color: var(--primary-color) !important;
+}
+.sign-in .login a:hover {
+  text-decoration: underline !important;
+}
+
 /* End sign in */
 
 /*************************** End sign in page *****************************/
