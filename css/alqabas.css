@@ -1246,6 +1246,12 @@ header .single-artical {
   padding: 60px 50px;
   border-radius: 50%;
 }
+.login .log-in {
+  font-size: 250px !important;
+  color: var(--primary-color);
+  border: none !important;
+  padding: 0 !important;
+}
 .sign-in .form {
   width: 500px;
   margin: 0 auto;
