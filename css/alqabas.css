@@ -4,6 +4,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
 }
 
 :root {
@@ -13,10 +14,6 @@
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Cairo", sans-serif;
 }
 
 a {
@@ -34,3 +31,34 @@ ul {
 }
 
 /* End Globle Rules */
+
+/* Start Header */
+/* Start Navbar */
+.links ul li a {
+  font-weight: 500;
+}
+.links ul li a.active,
+.links ul li:hover a {
+  color: var(--primary-color) !important;
+}
+.icon-logo .icons svg {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 8px;
+}
+.icon-logo .icons .cart span {
+  position: absolute;
+  top: -12px;
+  right: -5px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  color: white;
+  padding: 1px 5px;
+  font-size: 13px;
+}
+.icon-logo .logo img {
+  width: 30px;
+}
+
+/* End Navbar */
+/* End Header */
