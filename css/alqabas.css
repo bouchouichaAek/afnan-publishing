@@ -18,6 +18,7 @@ html {
 
 a {
   text-decoration: none;
+  color: black !important;
 }
 
 ul {
@@ -34,19 +35,20 @@ ul {
 
 /* Start Header */
 /* Start Navbar */
+
 .links ul li a {
-  font-weight: 500;
+  font-weight: 600;
 }
 .links ul li a.active,
-.links ul li:hover a {
+.links ul li:hover > a {
   color: var(--primary-color) !important;
 }
-.icon-logo .icons svg {
+.icons svg {
   border: 1px solid black;
   border-radius: 50%;
   padding: 8px;
 }
-.icon-logo .icons .cart span {
+.icons .cart span {
   position: absolute;
   top: -12px;
   right: -5px;
@@ -56,9 +58,70 @@ ul {
   padding: 1px 5px;
   font-size: 13px;
 }
-.icon-logo .logo img {
+a.logo img {
   width: 30px;
 }
 
+@media (max-width: 768px) {
+  .icons {
+    width: fit-content;
+    margin: 0 auto;
+    flex-direction: row !important;
+    gap: 20px;
+  }
+  .links ul {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
 /* End Navbar */
+
+/* Start Landing */
+header .landing {
+  width: 100%;
+  height: 100vh;
+  padding: 40px 0;
+  background-image: url(../img/release-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.landing .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(114, 66, 21, 0.6);
+}
+.landing .landing-content .last-releases-books {
+  margin-top: 2rem;
+}
+.landing .landing-content .last-releases-books .text h1:nth-of-type(1) {
+  font-size: 30px;
+}
+.landing .landing-content .last-releases-books .text h1:nth-of-type(2) {
+  font-size: 120px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+.landing .landing-content .last-releases-books .text h1:nth-of-type(3) {
+  font-size: 60px;
+}
+.landing .landing-content .last-releases-books .imgs {
+  width: 500px;
+}
+.landing .landing-content .last-releases-books .imgs img {
+  width: 150px;
+}
+.landing .wave {
+  position: absolute;
+  width: 100%;
+  bottom: -50px;
+}
+/* End Landing */
+
 /* End Header */
