@@ -30,8 +30,18 @@ ul {
 *:focus {
   outline: none;
 }
-
 /* End Globle Rules */
+
+/* Start Componnets  */
+.section-title {
+  padding: 8px 10px 8px 40px;
+  width: fit-content;
+  font-size: 25px;
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: 200px 0 0 200px;
+}
+/* End Componnets  */
 
 /* Start Header */
 /* Start Navbar */
@@ -95,10 +105,15 @@ header .landing {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(114, 66, 21, 0.6);
+  background-color: rgba(114, 66, 21, 0.5);
 }
 .landing .landing-content .last-releases-books {
   margin-top: 2rem;
+}
+@media (max-width: 768px) {
+  .landing .landing-content .last-releases-books {
+    margin-top: -0.5rem;
+  }
 }
 .landing .landing-content .last-releases-books .text h1:nth-of-type(1) {
   font-size: 30px;
@@ -111,17 +126,178 @@ header .landing {
 .landing .landing-content .last-releases-books .text h1:nth-of-type(3) {
   font-size: 60px;
 }
+@media (max-width: 1024px) {
+  .landing .landing-content .last-releases-books .text h1:nth-of-type(1) {
+    font-size: 30px;
+  }
+  .landing .landing-content .last-releases-books .text h1:nth-of-type(2) {
+    font-size: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .landing .landing-content .last-releases-books .text h1:nth-of-type(3) {
+    font-size: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .landing .landing-content .last-releases-books .text h1:nth-of-type(1) {
+    font-size: 25px;
+  }
+  .landing .landing-content .last-releases-books .text h1:nth-of-type(2) {
+    font-size: 80px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .landing .landing-content .last-releases-books .text h1:nth-of-type(3) {
+    font-size: 40px;
+  }
+}
+@media (max-width: 320px) {
+  .landing .landing-content .last-releases-books .text h1:nth-of-type(1) {
+    font-size: 20px;
+  }
+  .landing .landing-content .last-releases-books .text h1:nth-of-type(2) {
+    font-size: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .landing .landing-content .last-releases-books .text h1:nth-of-type(3) {
+    font-size: 30px;
+  }
+}
 .landing .landing-content .last-releases-books .imgs {
   width: 500px;
 }
+@media (max-width: 1024px) {
+  .landing .landing-content .last-releases-books .imgs {
+    width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .landing .landing-content .last-releases-books .imgs {
+    margin-top: 15px;
+    width: 300px;
+  }
+}
 .landing .landing-content .last-releases-books .imgs img {
   width: 150px;
+}
+@media (max-width: 1024px) {
+  .landing .landing-content .last-releases-books .imgs img {
+    width: 90px;
+  }
+}
+@media (max-width: 768px) {
+  .landing .landing-content .last-releases-books .imgs img {
+    width: 90px;
+  }
 }
 .landing .wave {
   position: absolute;
   width: 100%;
   bottom: -50px;
 }
+
+@media (max-width: 425px) {
+  .landing .wave {
+    bottom: -20px;
+  }
+}
+@media (max-width: 320px) {
+  .landing .wave {
+    bottom: 0px;
+  }
+}
+.landing .swiper-pagination {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  z-index: 3;
+}
+
+.landing .swiper-pagination span {
+  background-color: #ffffff;
+}
+.change-background {
+  --swiper-navigation-color: transparent;
+}
+.change-background::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 0px 7px;
+}
+.landing .change-background::before {
+  border: 1px solid white;
+  color: white;
+}
+.landing .swiper-button-prev::before {
+  content: "\f104";
+  margin-left: -10px;
+}
+.landing .swiper-button-next::before {
+  content: "\f105";
+  margin-right: 30px;
+}
+
+@media (max-width: 320px) {
+  .landing .change-background {
+    display: none;
+  }
+}
 /* End Landing */
 
 /* End Header */
+
+/* Start Last Release Section */
+.release {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+.release .swiper-wrapper {
+  display: flex;
+}
+
+.release .swiper-slide {
+  text-align: center;
+  border: 1px solid var(--primary-color);
+  border-radius: 25px;
+  padding: 50px 0px;
+}
+
+.release .swiper-slide img {
+  width: 70%;
+}
+.release .swiper-slide .categiory {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+.release .swiper-slide .title {
+  margin-bottom: 30px;
+}
+.release .swiper-slide .price {
+  width: fit-content;
+  margin-right: auto;
+  background-color: var(--primary-color);
+  padding: 5px 20px;
+  color: white;
+  border-radius: 0 40px 40px 0;
+}
+.release .change-background::before {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+.release .swiper-button-prev::before {
+  content: "\f105";
+  margin-left: -20px;
+}
+.release .swiper-button-next::before {
+  content: "\f104";
+  margin-right: 30px;
+}
+/* End Last Release Section */
