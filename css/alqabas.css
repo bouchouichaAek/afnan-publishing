@@ -301,3 +301,94 @@ header .landing {
   margin-right: 30px;
 }
 /* End Last Release Section */
+
+/* start Our Value */
+.our-values .boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: center;
+  gap: 30px;
+}
+.our-values .box-header {
+  background-color: var(--second-color);
+  text-align: center;
+}
+.our-values .box-header i {
+  font-size: 60px;
+  padding-top: 60px;
+}
+.our-values .box-header h2 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 15px;
+}
+.our-values .box-footer {
+  margin-top: -18px;
+  background-color: var(--primary-color);
+  text-align: center;
+}
+.our-values .box-footer h2 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+/* End Our Value */
+
+/* Start Subscriber */
+.subscriber .label {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+.subscriber .label i {
+  font-size: 100px;
+}
+.subscriber .label .text h1 {
+  color: var(--primary-color);
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+.subscriber .label .text p {
+  color: #6f6f6f;
+}
+.subscriber .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .subscriber .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.subscriber .container .input input[type="email"] {
+  padding: 11px 20px;
+  margin-left: -4px;
+  width: 350px;
+  border: 1px solid black;
+  border-left: none;
+  /* border-bottom: 1px solid black;
+  border-top: 1px solid black; */
+}
+
+.subscriber .container .input input[type="email"]::placeholder {
+  text-align: end;
+}
+.subscriber .container .input input[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px 35px;
+}
+@media (max-width: 425px) {
+  .subscriber .container .input input[type="email"] {
+    width: 100%;
+    border: 1px solid black;
+  }
+  .subscriber .container .input input[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+/* End Subscriber */

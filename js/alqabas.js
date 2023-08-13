@@ -1,7 +1,7 @@
 var swiper0 = new Swiper(".swiper0", {
   slidesPerView: 1,
   spaceBetween: 30,
-  loop: false,
+  loop: true,
   autoplay: true,
   pagination: {
     el: ".swiper-pagination0",
@@ -17,6 +17,7 @@ var swiper1 = new Swiper(".swiper1", {
   slidesPerView: 3,
   spaceBetween: 50,
   autoplay: true,
+
   breakpoints: {
     992: {
       slidesPerView: 3,
@@ -41,6 +42,7 @@ var swiper1 = new Swiper(".swiper2", {
   slidesPerView: 3,
   spaceBetween: 50,
   autoplay: true,
+
   breakpoints: {
     992: {
       slidesPerView: 3,
