@@ -612,3 +612,42 @@ header .our-books {
   color: white;
 }
 /* End Books Release */
+
+/*************************** End Our Books page *****************************/
+
+/*************************** Start Publish Your Book *****************************/
+
+header .publish-your-book {
+  background-image: url(../img/publish-your-book.jpg);
+}
+/* Start info */
+.start-info {
+}
+.start-info .descrption {
+  width: 750px;
+  font-size: 25px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+@media (max-width: 768px) {
+  .start-info .descrption {
+    width: 100%;
+  }
+}
+.start-info .box {
+  margin-bottom: 50px;
+}
+.start-info .box .title {
+  font-size: 25px;
+  font-weight: bold;
+}
+.start-info .box ul {
+  margin-top: 20px;
+  list-style: square;
+}
+.start-info .box ul p {
+  font-size: 20px;
+}
+/* End info */
+/*************************** End Publish Your Book *****************************/
