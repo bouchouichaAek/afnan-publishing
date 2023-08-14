@@ -91,13 +91,15 @@ a.logo img {
 /* Start Landing */
 header .landing {
   width: 100%;
-  height: 100vh;
   padding: 40px 0;
-  background-image: url(../img/release-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
+}
+header .main {
+  height: 100vh;
+  background-image: url(../img/release-bg.jpg);
 }
 .landing .overlay {
   position: absolute;
@@ -497,3 +499,49 @@ footer .footer-footer p {
   font-size: 20px;
 }
 /* End Footer */
+
+/*************************** Start Our Books page *****************************/
+
+/* Start Landing */
+header .our-books {
+  background-image: url(../img/our-books.jpg);
+}
+.landing-title {
+  width: 300px;
+  margin: 100px auto;
+  text-align: center;
+  line-height: 1.7;
+  font-size: 50px;
+}
+/* End Landing */
+
+/* Start Filters */
+.filters .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+.filters .container h1 {
+  color: var(--primary-color);
+}
+/* End Filters */
+
+/* Start Books Release */
+.release-books {
+}
+.release-books .header {
+  background-color: var(--primary-color);
+}
+.release-books .header .sort-by button {
+  background-color: var(--primary-color) !important;
+  border-radius: 0;
+  width: 200px;
+  text-align: start;
+}
+@media (max-width: 425px) {
+  .release-books .header .sort-by button {
+    width: 250px;
+    margin-bottom: 15px;
+  }
+}
+/* End Books Release */
