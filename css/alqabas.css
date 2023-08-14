@@ -516,13 +516,27 @@ header .our-books {
 /* End Landing */
 
 /* Start Filters */
-.filters .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 30px;
+.filters .container form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.filters .container h1 {
+@media (max-width: 425px) {
+  .filters .container form {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.filters .container form h1 {
   color: var(--primary-color);
+}
+
+.filters .container form input {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 5px 20px;
+  width: 150px;
 }
 /* End Filters */
 
@@ -543,5 +557,58 @@ header .our-books {
     width: 250px;
     margin-bottom: 15px;
   }
+}
+.books-release-content {
+}
+.books-release-content .boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 30px;
+}
+.books-release-content .boxes .box {
+  text-align: center;
+  border: 1px solid var(--primary-color);
+  border-radius: 25px;
+  padding: 50px 0px;
+}
+
+.books-release-content .boxes .box img {
+  width: 70%;
+}
+.books-release-content .boxes .box .categiory {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+.books-release-content .boxes .box .title {
+  margin-bottom: 30px;
+}
+.books-release-content .boxes .box .price-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.books-release-content .boxes .box .price {
+  width: fit-content;
+  margin-right: auto;
+  background-color: var(--primary-color);
+  padding: 5px 20px;
+  color: white;
+  border-radius: 0 40px 40px 0;
+}
+.books-release-content .boxes .box .cart {
+  width: fit-content;
+  background-color: var(--primary-color);
+  padding: 5px 20px;
+  color: white;
+  border-radius: 40px 0 0 40px;
+  cursor: pointer;
+}
+.books-release-content .button {
+  margin: 30px auto;
+  width: fit-content;
+  background-color: var(--primary-color);
+  padding: 5px 15px;
+  color: white;
 }
 /* End Books Release */
