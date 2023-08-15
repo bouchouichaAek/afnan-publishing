@@ -650,4 +650,59 @@ header .publish-your-book {
   font-size: 20px;
 }
 /* End info */
+
+/* Start Form  */
+.form {
+}
+.form .title {
+  width: fit-content;
+  color: var(--primary-color);
+  margin: 0 auto;
+  font-weight: 800;
+}
+.form form {
+  margin-top: 80px;
+}
+.form form .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+@media (max-width: 425px) {
+  .form form .box {
+    flex-direction: column;
+  }
+}
+.form form .box label {
+  font-size: 18px;
+  width: 15%;
+}
+.form form .box label span {
+  color: var(--primary-color);
+}
+@media (max-width: 425px) {
+  .form form .box label {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+.form form .box input:not(.form-control),
+.form form .box textarea {
+  width: 100%;
+  border: 1px solid #cfd3db;
+  padding: 15px;
+}
+.form form .box input {
+  height: 40px;
+}
+.form form .box input[type="email"] {
+  text-align: end;
+}
+
+.form form .box textarea {
+  height: 150px;
+}
+/* End Form  */
+
 /*************************** End Publish Your Book *****************************/
