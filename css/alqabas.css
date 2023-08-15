@@ -706,3 +706,64 @@ header .publish-your-book {
 /* End Form  */
 
 /*************************** End Publish Your Book *****************************/
+
+/*************************** Start blogger *****************************/
+
+header .blooger {
+  background-image: url(../img/blooger.jpg);
+}
+/* Start Artical Section */
+
+.articals-section .boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: center;
+  gap: 50px;
+}
+.articals-section .box {
+  background-color: white;
+  border-radius: 25px 25px 0 0;
+  border: 1px solid black;
+}
+.articals-section .box img {
+  border-radius: 25px 25px 0 0;
+  width: 100%;
+}
+.articals-section .category {
+  margin-top: 20px;
+  border-radius: 25px 0 0 25px;
+  background-color: var(--primary-color);
+  width: 90px;
+  color: white;
+  padding: 2px 10px;
+  text-align: start;
+}
+.articals-section .title {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.articals-section .info {
+  padding: 0 20px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+.articals-section .info i {
+  color: var(--primary-color);
+}
+.articals-section .text-content {
+  padding: 0 40px 20px;
+  font-weight: 700;
+}
+.articals-section .button {
+  width: fit-content;
+  background-color: var(--primary-color);
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+/* End Artical Section */
+/*************************** End blogger *****************************/
