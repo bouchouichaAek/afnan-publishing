@@ -823,3 +823,328 @@ header .contact-us {
 /* End Contact Us Info */
 
 /*************************** End contact us *****************************/
+
+/*************************** Start single-book *****************************/
+.book-info {
+}
+.book-info .big-title-section {
+  background-color: var(--primary-color);
+}
+@media (max-width: 320px) {
+  .book-info .big-title-section .title {
+    font-size: 22px;
+  }
+}
+.book-info .book-info-details {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+@media (max-width: 768px) {
+  .book-info .book-info-details {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+.book-info .book-info-details img {
+  width: 400px;
+}
+@media (max-width: 768px) {
+  .book-info .book-info-details img {
+    width: 100%;
+  }
+}
+.book-info .book-info-details .text {
+  position: relative;
+}
+.book-info .book-info-details .text .title {
+  color: var(--primary-color);
+  margin-bottom: 25px;
+}
+@media (max-width: 768px) {
+  .book-info .book-info-details .text .title {
+    font-size: 20px;
+  }
+}
+.book-info .book-info-details .text .price {
+  position: absolute;
+  background-color: var(--primary-color);
+  color: white;
+  width: fit-content;
+  padding: 5px 30px;
+  border-radius: 40px 0 0 40px;
+  right: -25px;
+}
+@media (max-width: 768px) {
+  .book-info .book-info-details .text .price {
+    position: initial;
+    border-radius: 0;
+    margin: 0 auto;
+  }
+}
+.book-info .book-info-details .text .description {
+  margin-top: 100px;
+}
+@media (max-width: 768px) {
+  .book-info .book-info-details .text .description {
+    margin-top: 20px;
+  }
+}
+.book-info .book-info-details .text .description p {
+  font-size: 20px;
+  line-height: 1.7;
+}
+@media (max-width: 768px) {
+  .book-info .book-info-details .text .add-to-cart {
+    justify-content: space-evenly !important;
+    margin-top: 20px;
+  }
+}
+.book-info .book-info-details .text .add-to-cart .quntity {
+  position: relative;
+  margin-right: 30px;
+}
+
+.book-info .book-info-details .text .add-to-cart .quntity input {
+  width: 60px;
+  height: 30px;
+  border: 1px solid black;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+}
+.book-info
+  .book-info-details
+  .text
+  .add-to-cart
+  .quntity
+  input::-webkit-outer-spin-button,
+.book-info
+  .book-info-details
+  .text
+  .add-to-cart
+  .quntity
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.book-info .book-info-details .text .add-to-cart .quntity button {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+}
+.book-info .book-info-details .text .add-to-cart .quntity .plus {
+  right: -30px;
+}
+.book-info .book-info-details .text .add-to-cart .quntity .mins {
+  left: -30px;
+}
+.book-info .book-info-details .text .add-to-cart a {
+  background-color: var(--primary-color);
+  padding: 5px 35px;
+  border-radius: 40px;
+}
+@media (max-width: 320px) {
+  .book-info .book-info-details .text .add-to-cart a {
+    padding: 5px 10px;
+  }
+}
+.book-info .tabs {
+}
+@media (max-width: 425px) {
+  .book-info .tabs {
+    flex-direction: column;
+    align-items: center !important;
+    width: 100% !important;
+  }
+}
+.book-info .tabs .tab-header {
+  width: 30%;
+}
+@media (max-width: 425px) {
+  .book-info .tabs .tab-header {
+    width: 100% !important;
+    margin-bottom: 20px;
+    border: 0;
+  }
+}
+.book-info .tabs .tab-header button {
+  width: 200px;
+  color: black;
+  border-radius: 0;
+  font-weight: bold;
+  text-align: start;
+}
+@media (max-width: 425px) {
+  .book-info .tabs .tab-header button {
+    width: 100% !important;
+    border: 0;
+    text-align: center;
+  }
+}
+.book-info .tabs .tab-header .active {
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+}
+.book-info .tabs .tab-content {
+  width: 100%;
+
+  border: 1px solid black;
+  padding: 25px;
+}
+.book-info .tabs .tab-content h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.book-info .tabs .tab-content .text {
+  font-size: 18px;
+}
+.book-info .tabs .tab-content .text .alert-primary {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+}
+.comments .box {
+  border-bottom: 2px solid var(--primary-color);
+}
+.comments .box i {
+  color: var(--primary-color);
+}
+.comments .write-comment {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.comments .write-comment .title {
+  width: fit-content;
+  color: var(--primary-color);
+  margin: 0 auto;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.comments .write-comment form .box-comment {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 425px) {
+  .comments .write-comment form .box-comment {
+    flex-direction: column;
+  }
+}
+.comments .write-comment form .box-comment label:not(.rating) {
+  font-weight: bold;
+  font-size: 18px;
+  width: 200px;
+}
+@media (max-width: 425px) {
+  .comments .write-comment form .box-comment label:not(.rating) {
+    margin-bottom: 10px;
+  }
+}
+.comments .write-comment form .box-comment input:not(.rating) {
+  width: 100%;
+  padding: 5px 10px;
+}
+.comments .write-comment form .box-comment .rating-stars {
+  width: 100%;
+}
+.comments .write-comment form .box-comment textarea {
+  width: 100%;
+  height: 150px;
+  padding: 5px 10px;
+}
+.comments .write-comment form .box-comment .rating-stars {
+  display: flex;
+  justify-content: start;
+  flex-direction: row-reverse;
+}
+.comments .write-comment form .box-comment .rating-stars label {
+}
+
+.comments .write-comment form .box-comment .rating-stars > input {
+  display: none;
+}
+.comments .write-comment form .box-comment .rating-stars > label {
+}
+.comments .write-comment form .box-comment .rating-stars > label::before {
+  display: block;
+  content: "\f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 500;
+  cursor: pointer;
+  transition-duration: 0.7ms;
+  color: var(--primary-color);
+}
+
+.comments
+  .write-comment
+  form
+  .box-comment
+  .rating-stars
+  > input:checked
+  ~ label::before {
+  color: var(--primary-color);
+  font-weight: 900;
+}
+
+/* Start other book */
+
+.other-book {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.other-book .swiper-wrapper {
+  display: flex;
+}
+
+.other-book .swiper-slide {
+  text-align: center;
+  border: 1px solid var(--primary-color);
+  border-radius: 25px;
+  padding: 50px 0px;
+}
+
+.other-book .swiper-slide img {
+  width: 70%;
+}
+.other-book .swiper-slide .categiory {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+.other-book .swiper-slide .title {
+  margin-bottom: 30px;
+}
+.other-book .swiper-slide .price {
+  width: fit-content;
+  margin-right: auto;
+  background-color: var(--primary-color);
+  padding: 5px 20px;
+  color: white;
+  border-radius: 0 40px 40px 0;
+}
+.other-book .change-background::before {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+.other-book .swiper-button-prev::before {
+  content: "\f105";
+  margin-left: -20px;
+}
+.other-book .swiper-button-next::before {
+  content: "\f104";
+  margin-right: 30px;
+}
+
+/* End other book */
+/*************************** End single-book *****************************/
