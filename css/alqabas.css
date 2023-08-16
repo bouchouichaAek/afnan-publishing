@@ -570,6 +570,18 @@ header .our-books {
   border: 1px solid var(--primary-color);
   border-radius: 25px;
   padding: 50px 0px;
+  position: relative;
+}
+.books-release-content .boxes .box i {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 25px;
+  color: #7242159a;
+  cursor: pointer;
+}
+.books-release-content .boxes .box i.liked {
+  color: var(--primary-color);
 }
 
 .books-release-content .boxes .box img {
@@ -1578,3 +1590,148 @@ header .single-artical {
   cursor: pointer;
 }
 /*************************** End My favorites page *****************************/
+
+/*************************** Start Dashboard page *****************************/
+.body {
+  background-color: #e7e7ee;
+}
+.dashboard .bg-white {
+  padding: 0 !important;
+  border-radius: 35px;
+  height: 315vh !important;
+}
+.dashboard .bgdashboard-side-bar {
+}
+.dashboard .dashboard-side-bar .logo img {
+  width: 150px;
+}
+.dashboard .dashboard-side-bar .links ul li {
+  margin-bottom: 25px;
+  font-size: 22px;
+  padding: 10px 40px;
+  border-radius: 40px 0 0 40px;
+  margin-right: -32px;
+  transition-duration: 0.3s;
+}
+.dashboard .dashboard-side-bar .links ul li i {
+  margin-left: 10px;
+  font-size: 30px !important;
+}
+
+.dashboard .dashboard-side-bar .links ul li.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+.dashboard .dashboard-side-bar .links ul li.active a {
+  color: white !important;
+}
+.dashboard .dashboard-side-bar .links ul li:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+.dashboard .dashboard-side-bar .links ul li:hover a {
+  color: white !important;
+}
+.dashboard .header {
+  background-color: white;
+  padding: 20px;
+  border-radius: 40px;
+}
+.dashboard .header .search-bar {
+  border: 2px solid black;
+  width: fit-content;
+  border-radius: 40px;
+}
+.dashboard .header i {
+  padding: 5px 15px;
+}
+.dashboard .header input {
+  border: none;
+  padding: 5px;
+  border-radius: 40px;
+  width: 300px;
+}
+.dashboard .header .user-noti a span {
+  position: absolute;
+  top: -10px;
+  right: 8px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1px 5px;
+  font-size: 13px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+.dashboard .section-box {
+  border-radius: 40px;
+  background-color: white;
+  padding: 20px;
+}
+.dashboard .overview .boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+}
+.dashboard .overview .boxes .box {
+  text-align: center;
+  height: 230px;
+  padding-top: 30px;
+  border-radius: 40px;
+}
+.dashboard .overview .boxes .box i {
+  font-size: 50px;
+  color: white;
+}
+.dashboard .overview .boxes .box .title {
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+  padding: 10px 0 0px;
+}
+.dashboard .overview .boxes .box span {
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+}
+.dashboard .overview .boxes .orange {
+  background-color: #ff7b00;
+}
+.dashboard .overview .boxes .red {
+  background-color: #c20000;
+}
+.dashboard .overview .boxes .blue {
+  background-color: #0099ff;
+}
+.dashboard .table-responsive .table input {
+  padding: 1px 20px;
+  border: none;
+  color: white;
+  border-radius: 40px;
+}
+.dashboard .users-list .table-responsive .table th {
+}
+.dashboard .table-responsive .table input[value="تعديل"] {
+  background-color: #098015;
+}
+.dashboard .table-responsive .table input[value="حذف"] {
+  background-color: #d22323;
+}
+.dashboard .table-responsive .table .publiched {
+  color: #098015;
+}
+.dashboard .table-responsive .table .pending {
+  color: #ff7b00;
+}
+.dashboard .table-responsive .table .rejected {
+  color: #d22323;
+}
+.dashboard .articals .table-responsive .table a {
+  padding: 1px 20px;
+  border: none;
+  color: white !important;
+  border-radius: 40px;
+  background-color: #098015;
+  text-decoration: none;
+}
+
+/*************************** End Dashboard page *****************************/
