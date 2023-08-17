@@ -1873,18 +1873,18 @@ header .single-artical {
 .dashboard .table-responsive .table tr:not(:first-of-type) th {
   font-weight: normal !important;
 }
-.dashboard .table-responsive .table input {
-  padding: 1px 20px;
-  border: none;
-  color: white;
+.dashboard .table-responsive .table a {
+  padding: 0px 20px;
+  color: white !important;
   border-radius: 40px;
+  text-decoration: none;
 }
 .dashboard .users-list .table-responsive .table th {
 }
-.dashboard .table-responsive .table input[value="تعديل"] {
-  background-color: #098015;
+.dashboard .table-responsive .table .edit {
+  background-color: #098015 !important;
 }
-.dashboard .table-responsive .table input[value="حذف"] {
+.dashboard .table-responsive .table .delete {
   background-color: #d22323;
 }
 .dashboard .table-responsive .table .publiched,
@@ -1905,6 +1905,22 @@ header .single-artical {
   border-radius: 40px;
   background-color: var(--primary-color);
   text-decoration: none;
+}
+.dashboard form .button {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.dashboard form .button .btn {
+  padding-left: 40px;
+  padding-right: 40px;
+  color: white !important;
+  border-radius: 40px;
+}
+.dashboard form .button .save {
+  background-color: var(--primary-color);
+}
+.dashboard form .button .cancel {
+  background-color: #747474;
 }
 
 /*************************** End Dashboard page *****************************/
