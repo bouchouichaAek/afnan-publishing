@@ -60,13 +60,13 @@ ul {
 }
 .icons .cart span {
   position: absolute;
-  top: -12px;
-  right: -5px;
+  top: 0;
+  right: -2px;
   background-color: var(--primary-color);
   border-radius: 50%;
   color: white;
   padding: 1px 5px;
-  font-size: 13px;
+  font-size: 10px;
 }
 a.logo img {
   width: 30px;
@@ -1598,7 +1598,7 @@ header .single-artical {
 .dashboard .bg-white {
   padding: 0 !important;
   border-radius: 35px;
-  height: 315vh !important;
+  /* height: 315vh !important; */
 }
 @media (max-width: 425px) {
   .dashboard .bg-white {
@@ -1639,6 +1639,11 @@ header .single-artical {
   border-radius: 40px 0 0 40px;
   margin-right: -32px;
   transition-duration: 0.3s;
+}
+@media (max-width: 768px) {
+  .dashboard .dashboard-side-bar .links ul {
+    margin-top: 50px;
+  }
 }
 @media (max-width: 768px) {
   .dashboard .dashboard-side-bar .links ul li {
@@ -1688,7 +1693,7 @@ header .single-artical {
     margin-right: 0px;
     margin-left: 0px;
     font-size: 28px !important;
-    padding: 5px 3px;
+    padding: 18px 15px !important;
   }
 }
 @media (max-width: 320px) {
@@ -1769,9 +1774,24 @@ header .single-artical {
   background-color: white;
   padding: 20px;
 }
+.dashboard .section-box .header {
+  padding: 0;
+}
+@media (max-width: 320px) {
+  .dashboard .section-box .header {
+    flex-direction: column;
+  }
+}
+.dashboard .section-box .header a {
+  background-color: var(--primary-color);
+  color: white !important;
+  text-decoration: none;
+  padding: 5px 40px;
+  border-radius: 40px;
+}
 .dashboard .overview .boxes {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 30px;
 }
 @media (max-width: 320px) {
@@ -1810,14 +1830,48 @@ header .single-artical {
     font-size: 22px;
   }
 }
-.dashboard .overview .boxes .orange {
+.dashboard .boxes .orange {
   background-color: #ff7b00;
 }
-.dashboard .overview .boxes .red {
+.dashboard .boxes .red {
   background-color: #c20000;
 }
-.dashboard .overview .boxes .blue {
+.dashboard .boxes .blue {
   background-color: #0099ff;
+}
+.dashboard .boxes .green {
+  background-color: #098015;
+}
+.dashboard .boxes .violet {
+  background-color: #99209b;
+}
+.dashboard .boxes .yallow {
+  background-color: #9b8720;
+}
+.dashboard .table-responsive .table {
+  width: 180%;
+  text-align: start !important;
+}
+.dashboard .table-responsive::-webkit-scrollbar {
+  border-radius: 40px !important;
+}
+.dashboard .table-responsive::-webkit-scrollbar-thumb {
+  border-radius: 40px !important;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(209, 209, 209);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  /*Your styles here*/
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background-color: var(--primary-color);
+  /*Your styles here*/
+}
+.dashboard .table-responsive .table tr:not(:first-of-type) th {
+  font-weight: normal !important;
 }
 .dashboard .table-responsive .table input {
   padding: 1px 20px;
@@ -1833,13 +1887,15 @@ header .single-artical {
 .dashboard .table-responsive .table input[value="حذف"] {
   background-color: #d22323;
 }
-.dashboard .table-responsive .table .publiched {
+.dashboard .table-responsive .table .publiched,
+.dashboard .table-responsive .table .activated {
   color: #098015;
 }
 .dashboard .table-responsive .table .pending {
   color: #ff7b00;
 }
-.dashboard .table-responsive .table .rejected {
+.dashboard .table-responsive .table .rejected,
+.dashboard .table-responsive .table .deactivated {
   color: #d22323;
 }
 .dashboard .articals .table-responsive .table a {
@@ -1847,7 +1903,7 @@ header .single-artical {
   border: none;
   color: white !important;
   border-radius: 40px;
-  background-color: #098015;
+  background-color: var(--primary-color);
   text-decoration: none;
 }
 

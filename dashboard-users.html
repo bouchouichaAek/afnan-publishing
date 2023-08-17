@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم - دار القبس للنشر والتوزيع</title>
+    <link rel="icon" href="img/Artboard 2.png">
+    <link rel="stylesheet" href="css/alqabas.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+</head>
+
+
+<body class="body">
+
+    <div class="dashboard main m-4">
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-start g-5">
+                <div class="col-12 col-sm-2 col-lg-3 bg-white">
+                    <div class="dashboard-side-bar">
+                        <div class="logo text-center pt-5 pb-3">
+                            <img src="img/Artboard 2.png" alt="" srcset="">
+                        </div>
+                        <div class="text-title text-center pb-5">
+                            <h1 class="fw-bold">لوحة التحكم</h1>
+                        </div>
+                        <div class="links">
+                            <ul>
+                                <li>
+
+                                    <a class="text-decoration-none" href="dashboard-main.html"><i
+                                            class="fa-solid fa-gauge"></i><span>الرئيسية</span></a>
+                                </li>
+                                <li>
+
+                                    <a class="text-decoration-none" href="dashboard-books.html"><i
+                                            class="fa-solid fa-book"></i><span>الكتب</span></a>
+                                </li>
+                                <li>
+                                    <a class="text-decoration-none" href="dashboard-articals.html"> <i
+                                            class="fa-solid fa-newspaper"></i><span>المقالات</span></a>
+                                </li>
+                                <li class="active">
+                                    <a class="text-decoration-none" href="dashboard-users.html"> <i
+                                            class="fa-solid fa-users"></i><span>المستخدمين</span></a>
+                                </li>
+                                <li>
+                                    <a class="text-decoration-none" href="dashboard-sales.html"><i
+                                            class="fa-solid fa-sack-dollar"></i><span>المبيعات</span></a>
+                                </li>
+                                <li>
+                                    <a class="text-decoration-none" href="index.html"> <i
+                                            class="fa-solid fa-right-from-bracket"></i>
+                                        <span>الخروج</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-10 col-lg-9">
+                    <div class="section-box header d-flex justify-content-between align-items-center">
+                        <div class="search-bar">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="search" name="" id="" placeholder="ابحث هنا ...">
+                        </div>
+                        <div class="user-noti">
+                            <a class="position-relative" href=""><span>2</span><i
+                                    class="fa-solid fa-bell fa-xl"></i></a>
+                            <a href=""> <i class="fa-solid fa-circle-user fa-xl p-0"></i></a>
+                        </div>
+                    </div>
+                    <div class="section-box users-list mt-4">
+                        <h1 class="title-overview fs-3 fw-bold pb-3 px-3">قائمة المستخدمين</h1>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover mt-4 text-center table-bordered">
+                                <tr>
+                                    <th class="text-uppercase ">#</th>
+                                    <th class="text-uppercase ">الإسم الأول</th>
+                                    <th class="text-uppercase ">أسم العائلة</th>
+                                    <th class="text-uppercase ">إسم المستخدم</th>
+                                    <th class="text-uppercase ">البريد الإلكتروني</th>
+                                    <th class="text-uppercase ">الجنس</th>
+                                    <th class="text-uppercase ">تاريخ الميلاد</th>
+                                    <th class="text-uppercase ">تاريخ التسجيل</th>
+                                    <th class="text-uppercase ">صفة العضوية</th>
+                                    <th class="text-uppercase ">حالة الحساب</th>
+                                    <th class="text-uppercase ">حذف</th>
+                                    <th class="text-uppercase ">تعديل</th>
+                                </tr>
+                                <tr>
+                                    <th class="text-uppercase ">1</th>
+
+                                    <td class="text-uppercase ">إبراهيم قاري</td>
+                                    <th class="text-uppercase ">قاري</th>
+                                    <th class="text-uppercase ">ibrahim_kari</th>
+                                    <th class="text-uppercase ">ibrahimkari@gmail.com</th>
+                                    <th class="text-uppercase ">ذكر</th>
+                                    <th class="text-uppercase ">07 أوت 1998</th>
+                                    <th class="text-uppercase ">02 ماي 2023</th>
+                                    <th class="text-uppercase ">مدير</th>
+                                    <th class="text-uppercase activated">مفعل</th>
+                                    <td class="text-uppercase ">
+                                        <form action="">
+                                            <input type="submit" value="تعديل">
+                                        </form>
+                                    </td>
+                                    <td class="">
+                                        <form action="">
+                                            <input class="" type="submit" value="حذف">
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-uppercase ">2</th>
+
+                                    <td class="text-uppercase ">صفية </td>
+                                    <th class="text-uppercase ">مطر</th>
+                                    <th class="text-uppercase ">safia_matter</th>
+                                    <th class="text-uppercase ">safiamatter@gmail.com</th>
+                                    <th class="text-uppercase ">أنثى</th>
+                                    <th class="text-uppercase ">23 أوت 2002</th>
+                                    <th class="text-uppercase ">20 ماي 2023</th>
+                                    <th class="text-uppercase ">مستخدم</th>
+                                    <th class="text-uppercase activated">مفعل</th>
+                                    <td class="text-uppercase ">
+                                        <form action="">
+                                            <input type="submit" value="تعديل">
+                                        </form>
+                                    </td>
+                                    <td class="">
+                                        <form action="">
+                                            <input class="" type="submit" value="حذف">
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-uppercase ">3</th>
+
+                                    <td class="text-uppercase ">سارة </td>
+                                    <th class="text-uppercase ">رابح</th>
+                                    <th class="text-uppercase ">sarah_rabah</th>
+                                    <th class="text-uppercase ">sarahrabah@gmail.com</th>
+                                    <th class="text-uppercase ">أنثى</th>
+                                    <th class="text-uppercase ">23 أوت 1995</th>
+                                    <th class="text-uppercase ">20 ماي 2023</th>
+                                    <th class="text-uppercase ">مستخدم</th>
+                                    <th class="text-uppercase activated">مفعل</th>
+                                    <td class="text-uppercase ">
+                                        <form action="">
+                                            <input type="submit" value="تعديل">
+                                        </form>
+                                    </td>
+                                    <td class="">
+                                        <form action="">
+                                            <input class="" type="submit" value="حذف">
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-uppercase ">4</th>
+
+                                    <td class="text-uppercase ">حفصة </td>
+                                    <th class="text-uppercase ">كيحل</th>
+                                    <th class="text-uppercase ">hafsa_kihal</th>
+                                    <th class="text-uppercase ">hafsakihal@gmail.com</th>
+                                    <th class="text-uppercase ">أنثى</th>
+                                    <th class="text-uppercase ">23 أوت 1998</th>
+                                    <th class="text-uppercase ">20 ماي 2023</th>
+                                    <th class="text-uppercase ">مستخدم</th>
+                                    <th class="text-uppercase activated">مفعل</th>
+                                    <td class="text-uppercase ">
+                                        <form action="">
+                                            <input type="submit" value="تعديل">
+                                        </form>
+                                    </td>
+                                    <td class="">
+                                        <form action="">
+                                            <input class="" type="submit" value="حذف">
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-uppercase ">5</th>
+
+                                    <td class="text-uppercase ">محمد </td>
+                                    <th class="text-uppercase ">قاري</th>
+                                    <th class="text-uppercase ">mohammed_kari</th>
+                                    <th class="text-uppercase ">mohammedkari@gmail.com</th>
+                                    <th class="text-uppercase ">ذكر</th>
+                                    <th class="text-uppercase ">23 أوت 1965</th>
+                                    <th class="text-uppercase ">20 ماي 2023</th>
+                                    <th class="text-uppercase ">مستخدم</th>
+                                    <th class="text-uppercase activated">مفعل</th>
+                                    <td class="text-uppercase ">
+                                        <form action="">
+                                            <input type="submit" value="تعديل">
+                                        </form>
+                                    </td>
+                                    <td class="">
+                                        <form action="">
+                                            <input class="" type="submit" value="حذف">
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-uppercase ">6</th>
+
+                                    <td class="text-uppercase ">حفصة </td>
+                                    <th class="text-uppercase ">شلابي</th>
+                                    <th class="text-uppercase ">hafsa_chalabi</th>
+                                    <th class="text-uppercase ">hafsachalabi@gmail.com</th>
+                                    <th class="text-uppercase ">أنثى</th>
+                                    <th class="text-uppercase ">23 أوت 2007</th>
+                                    <th class="text-uppercase ">20 ماي 2023</th>
+                                    <th class="text-uppercase ">مستخدم</th>
+                                    <th class="text-uppercase activated">مفعل</th>
+                                    <td class="text-uppercase ">
+                                        <form action="">
+                                            <input type="submit" value="تعديل">
+                                        </form>
+                                    </td>
+                                    <td class="">
+                                        <form action="">
+                                            <input class="" type="submit" value="حذف">
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-uppercase ">7</th>
+
+                                    <td class="text-uppercase "> محمد</td>
+                                    <th class="text-uppercase ">سوداني</th>
+                                    <th class="text-uppercase ">mohammed_soudani</th>
+                                    <th class="text-uppercase ">mohammedsoudani@gmail.com</th>
+                                    <th class="text-uppercase ">ذكر</th>
+                                    <th class="text-uppercase ">23 أوت 1998</th>
+                                    <th class="text-uppercase ">20 ماي 2023</th>
+                                    <th class="text-uppercase ">مستخدم</th>
+                                    <th class="text-uppercase deactivated">معطل</th>
+                                    <td class="text-uppercase ">
+                                        <form action="">
+                                            <input type="submit" value="تعديل">
+                                        </form>
+                                    </td>
+                                    <td class="">
+                                        <form action="">
+                                            <input class="" type="submit" value="حذف">
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-uppercase ">8</th>
+
+                                    <td class="text-uppercase ">عزالدين </td>
+                                    <th class="text-uppercase ">مرابطي</th>
+                                    <th class="text-uppercase ">azzedine_merabti</th>
+                                    <th class="text-uppercase ">azzedinemerabti@gmail.com</th>
+                                    <th class="text-uppercase ">ذكر</th>
+                                    <th class="text-uppercase ">20 نوفمبر 1993</th>
+                                    <th class="text-uppercase ">20 ماي 2023</th>
+                                    <th class="text-uppercase ">مستخدم</th>
+                                    <th class="text-uppercase activated">مفعل</th>
+                                    <td class="text-uppercase ">
+                                        <form action="">
+                                            <input type="submit" value="تعديل">
+                                        </form>
+                                    </td>
+                                    <td class="">
+                                        <form action="">
+                                            <input class="" type="submit" value="حذف">
+                                        </form>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
