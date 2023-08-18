@@ -1997,7 +1997,7 @@ header .single-artical {
   .cart-secton .cart-items .content-cart-items .box {
     flex-direction: column;
     gap: 20px;
-    align-items: self-start !important;
+    align-items: flex-start !important;
   }
 }
 .cart-secton .cart-items .content-cart-items .box .item-detail img {
@@ -2112,3 +2112,152 @@ header .single-artical {
 /* End Cart */
 
 /*************************** End Cart page *****************************/
+
+/*************************** Start Checkout page *****************************/
+/* Start Checkout */
+.checkout {
+}
+.checkout {
+  margin: 100px 0;
+}
+.checkout .dilevery-address .content-dilevery-address .write-address {
+  color: var(--primary-color) !important;
+}
+.checkout
+  .payment-methods-choise
+  .content-payment-methods-choise
+  .write-payment-methods {
+  color: var(--primary-color) !important;
+}
+.checkout .cart-items .header-cart-items .clear-all {
+  color: var(--primary-color) !important;
+}
+.checkout .cart-items .header-cart-items .clear-all:hover {
+  text-decoration: underline !important;
+}
+
+.checkout .cart-items .content-cart-items .box:not(:first-of-type) {
+  padding-top: 30px;
+}
+.checkout .cart-items .content-cart-items .box:not(:last-of-type) {
+  border-bottom: 1px solid #aaaaaa;
+  padding-bottom: 30px;
+}
+@media (max-width: 375px) {
+  .checkout .cart-items .content-cart-items .box {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start !important;
+  }
+}
+.checkout .cart-items .content-cart-items .box .item-detail img {
+  width: 100px;
+}
+.checkout .cart-items .content-cart-items .box .item-detail .category {
+  color: var(--primary-color);
+}
+.checkout .cart-items .content-cart-items .box .item-detail .price {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.checkout .cart-items .content-cart-items .box .quntity-price .price {
+  color: #737373;
+  text-align: end;
+}
+.checkout .cart-items .content-cart-items .box .quntity-price {
+}
+.checkout .cart-items .content-cart-items .box .quntity-price .quntity {
+  position: relative;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.checkout .cart-items .content-cart-items .box .quntity-price .quntity input {
+  width: 60px;
+  height: 30px;
+  border: 1px solid black;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+}
+.checkout
+  .cart-items
+  .content-cart-items
+  .box
+  .quntity-price
+  .quntity
+  input::-webkit-outer-spin-button,
+.checkout
+  .cart-items
+  .content-cart-items
+  .box
+  .quntity-price
+  .quntity
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.checkout .cart-items .content-cart-items .box .quntity-price .quntity button {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+}
+.checkout .cart-items .content-cart-items .box .quntity-price .quntity .plus {
+  right: -30px;
+}
+.checkout .cart-items .content-cart-items .box .quntity-price .quntity .mins {
+  left: -30px;
+}
+.checkout .summary .content-summary .total-price {
+  position: relative;
+  padding-top: 20px;
+}
+.checkout .summary .content-summary .total-price::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 1px;
+  background-color: #aaaaaa;
+}
+.checkout .summary .content-summary .pay .pay-link {
+  background-color: var(--primary-color);
+  text-decoration: none;
+  color: white !important;
+  padding: 5px 30px;
+  border-radius: 40px;
+  width: 100% !important;
+  border: none;
+}
+.checkout .payment-methods .content-payment-methods .logo .img {
+  width: 40px;
+}
+/* .checkout .discount-price {
+  width: 100%;
+} */
+.checkout .discount-price form {
+  width: 100%;
+  /* margin-right: -160px; */
+}
+.checkout .discount-price form input[type="text"] {
+  width: 70%;
+  border: 1px solid var(--primary-color);
+  padding: 5px 20px;
+  border-radius: 40px;
+}
+.checkout .discount-price form input[type="submit"] {
+  width: 30%;
+  border: 1px solid var(--primary-color);
+  padding: 5px 20px;
+  border-radius: 40px;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* End Checkout */
+
+/*************************** End Checkout page *****************************/
