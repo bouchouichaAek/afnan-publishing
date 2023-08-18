@@ -1972,3 +1972,143 @@ header .single-artical {
 }
 
 /*************************** End Dashboard page *****************************/
+
+/*************************** Start Cart page *****************************/
+
+/* Start Cart */
+.cart-secton {
+  margin: 100px 0;
+}
+.cart-secton .cart-items .header-cart-items .clear-all {
+  color: var(--primary-color) !important;
+}
+.cart-secton .cart-items .header-cart-items .clear-all:hover {
+  text-decoration: underline !important;
+}
+
+.cart-secton .cart-items .content-cart-items .box:not(:first-of-type) {
+  padding-top: 30px;
+}
+.cart-secton .cart-items .content-cart-items .box:not(:last-of-type) {
+  border-bottom: 1px solid #aaaaaa;
+  padding-bottom: 30px;
+}
+@media (max-width: 375px) {
+  .cart-secton .cart-items .content-cart-items .box {
+    flex-direction: column;
+    gap: 20px;
+    align-items: self-start !important;
+  }
+}
+.cart-secton .cart-items .content-cart-items .box .item-detail img {
+  width: 100px;
+}
+.cart-secton .cart-items .content-cart-items .box .item-detail .category {
+  color: var(--primary-color);
+}
+.cart-secton .cart-items .content-cart-items .box .item-detail .price {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.cart-secton .cart-items .content-cart-items .box .quntity-price .price {
+  color: #737373;
+  text-align: end;
+}
+.cart-secton .cart-items .content-cart-items .box .quntity-price {
+}
+.cart-secton .cart-items .content-cart-items .box .quntity-price .quntity {
+  position: relative;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.cart-secton
+  .cart-items
+  .content-cart-items
+  .box
+  .quntity-price
+  .quntity
+  input {
+  width: 60px;
+  height: 30px;
+  border: 1px solid black;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+}
+.cart-secton
+  .cart-items
+  .content-cart-items
+  .box
+  .quntity-price
+  .quntity
+  input::-webkit-outer-spin-button,
+.cart-secton
+  .cart-items
+  .content-cart-items
+  .box
+  .quntity-price
+  .quntity
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.cart-secton
+  .cart-items
+  .content-cart-items
+  .box
+  .quntity-price
+  .quntity
+  button {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+}
+.cart-secton
+  .cart-items
+  .content-cart-items
+  .box
+  .quntity-price
+  .quntity
+  .plus {
+  right: -30px;
+}
+.cart-secton
+  .cart-items
+  .content-cart-items
+  .box
+  .quntity-price
+  .quntity
+  .mins {
+  left: -30px;
+}
+.cart-secton .summary .content-summary .total-price {
+  position: relative;
+  padding-top: 20px;
+}
+.cart-secton .summary .content-summary .total-price::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 1px;
+  background-color: #aaaaaa;
+}
+.cart-secton .summary .content-summary .pay .pay-link {
+  background-color: var(--primary-color);
+  text-decoration: none;
+  color: white !important;
+  padding: 1px 30px;
+  border-radius: 40px;
+}
+.cart-secton .payment-methods .content-payment-methods .logo .img {
+  width: 40px;
+}
+
+/* End Cart */
+
+/*************************** End Cart page *****************************/

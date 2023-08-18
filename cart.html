@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>إنشاء حساب جديد - دار القبس للنشر والتوزيع</title>
+    <title>عربة التسوق - دار القبس للنشر والتوزيع</title>
     <link rel="icon" href="img/Artboard 2.png">
     <link rel="stylesheet" href="css/alqabas.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -85,54 +85,109 @@
     <!-- End Header -->
 
 
-    <!-- Start sign in -->
-    <div class="sign-in my-5">
+
+    <!-- Start Cart -->
+    <div class="cart-secton">
         <div class="container">
-            <div class="sign-in-header">
-                <h1 class="title">تسجيل مستخدم جديد</h1>
-                <i class="fa-solid fa-user-plus"></i>
-            </div>
-            <div class="form">
-                <form action="" method="post">
-                    <div class="box username">
-                        <label for="username">إسم المستخدم :</label>
-                        <input type="text" name="username" id="" placeholder="إسم المستخدم">
-                    </div>
-                    <div class="box firtsname">
-                        <label for="firtsname">إسم الأول :</label>
-                        <input type="text" name="firtsname" id="" placeholder="إسم الأول">
-                    </div>
-                    <div class="box lastname">
-                        <label for="lastname">إسم العائلة :</label>
-                        <input type="text" name="lastname" id="" placeholder="إسم العائلة">
-                    </div>
-                    <div class="box email">
-                        <label for="email">البريد الإلكتروني :</label>
-                        <input type="email" name="email" id="" placeholder="البريد الإلكتروني">
-                    </div>
-                    <div class="box password">
-                        <label for="password">كلمة المرور :</label>
-                        <input type="password" name="password" id="" placeholder="كلمة المرور">
-                    </div>
-                    <div class="checkbox-submit d-flex justify-content-between align-items-start">
-                        <div class="check">
-                            <input type="checkbox" name="checkbox" id="">
-                            <label for="checkbox">أوافق على <a href="" class="text-decoration-none fw-bold">اتفاقية
-                                    المستخدم</a></label>
-                            <p>يرجى الإطلاع على اتفاقية المستخد قبل التأكيد</p>
+            <div class="row justify-content-center align-items-start g-5">
+                <div class="col-12 col-lg-8">
+                    <div class="cart-items">
+                        <div class="header-cart-items d-flex justify-content-between align-items-center ">
+                            <h3 class="fs-4 fw-bold title">عربة التسوق</h3>
+                            <a class="clear-all text-decoration-none fw-bold" href="">حذف الكل</a>
                         </div>
-                        <input type="submit" value="التسجيل">
+                        <div class="content-cart-items my-5">
+                            <div class="boxes">
+                                <div class="box d-flex justify-content-between align-items-center">
+                                    <div class="item-detail d-flex justify-content-start align-items-center gap-4">
+                                        <img src="img/book-4.jpg" alt="">
+                                        <div class="item-decription">
+                                            <p class="category fw-bold">فلسفة</p>
+                                            <h4 class="title fw-bold">كتاب كيف تفكر كأمثربولوجي</h4>
+                                            <p class="price">1500 دج</p>
+                                        </div>
+                                    </div>
+                                    <div class="quntity-price ">
+                                        <p class="price">4800,00 دج</p>
+                                        <div class="quntity">
+                                            <button class="plus">+</button>
+                                            <input type="number" value="2" name="" id="">
+                                            <button class="mins">-</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box d-flex justify-content-between align-items-center py-5">
+                                    <div class="item-detail d-flex justify-content-start align-items-center gap-4">
+                                        <img src="img/book-4.jpg" alt="">
+                                        <div class="item-decription">
+                                            <p class="category fw-bold">فلسفة</p>
+                                            <h4 class="title fw-bold">كتاب كيف تفكر كأمثربولوجي</h4>
+                                            <p class="price">1500 دج</p>
+                                        </div>
+                                    </div>
+                                    <div class="quntity-price ">
+                                        <p class="price">4800,00 دج</p>
+                                        <div class="quntity">
+                                            <button class="plus">+</button>
+                                            <input type="number" value="2" name="" id="">
+                                            <button class="mins">-</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </form>
-                <div class="login">
-                    <p class="fw-semibold ">لديك حساب بالفعل ؟ <a href="login.html" class="text-decoration-none">سجل
-                            الدخول
-                            الآن</a></p>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="summary mb-5">
+                        <div class="header-summary ">
+                            <h3 class="fs-4 fw-bold title">الملخص</h3>
+                        </div>
+                        <div class="content-summary my-5">
+                            <div class="total-price-books d-flex justify-content-between align-items-center mb-2">
+                                <h3 class="fs-5 fw-meduim">المبلغ الإجمالي للكتب : </h3>
+                                <h3 class="fs-5 fw-meduim price">2500 دج</h3>
+                            </div>
+                            <div class="total-price-delevery d-flex justify-content-between align-items-center">
+                                <h3 class="fs-5 fw-meduim">المبلغ الشحن : </h3>
+                                <h3 class="fs-5 fw-meduim price">600 دج</h3>
+                            </div>
+                            <div class="total-price d-flex justify-content-between align-items-center mt-5">
+                                <h3 class="fs-5 fw-bold">المبلغ الإجمالي : </h3>
+                                <h3 class=" fs-5 fw-bold price">3100 دج</h3>
+                            </div>
+                            <div class="pay text-end mt-4">
+                                <a href="checkout.html" class="pay-link">الدفع</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payment-methods mb-5">
+                        <div class="header-payment-methods">
+                            <h3 class="fs-4 fw-bold title">طرق الدفع</h3>
+                        </div>
+                        <div class="content-payment-methods pt-2pt-2">
+                            <div class="logo d-flex justify-content-start align-items-center gap-2">
+                                <img class="img barede-mob" src="img/barede-mob-3773.png" alt="" srcset="">
+                                <img class="img visa" src="img/visa.png" alt="" srcset="">
+                                <img class="img master-card" src="img/master-card.png" alt="" srcset="">
+                                <img class="img paypal" src="img/paypal-logo-0.png" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="protect-custemer">
+                        <div class="header-protect-custemer">
+                            <h3 class="fs-4 fw-bold title">حماية المشتري</h3>
+                        </div>
+                        <div class="content-protect-custemer pt-2">
+                            <p class="fs-5">استرد أموالك فى حالة اختلاف المنتج عن الوصف أو لم يتم التسليم</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End sign in -->
+    <!-- End Cart -->
+
 
 
 
@@ -196,8 +251,6 @@
     <!-- <script src="js/all.min.js"></script> -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/alqabas.js"></script>
-
-
 
 </body>
 
