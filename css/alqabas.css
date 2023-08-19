@@ -1,10 +1,19 @@
 /* Start Globle Rules */
 
+@font-face {
+  font-family: JF Flat Regular;
+  src: url(../fonts/JF-Flat-Regular.ttf);
+
+  font-weight: bolder;
+  font-style: normal;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Cairo", sans-serif;
+  /* font-family: JF Flat Regular, Segoe UI, Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: "cairo", sans-serif;
 }
 
 :root {
@@ -2261,3 +2270,79 @@ header .single-artical {
 /* End Checkout */
 
 /*************************** End Checkout page *****************************/
+
+/*************************** Start 404 page *****************************/
+.section-404 .number {
+  font-size: 250px;
+  font-weight: bold;
+  position: relative;
+}
+@media (max-width: 425px) {
+  .section-404 .number {
+    font-size: 150px;
+  }
+}
+.section-404 .number::before,
+.section-404 .number::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  width: 150px;
+  height: 5px;
+  background-color: var(--primary-color);
+}
+
+.section-404 .number::before {
+  right: 15%;
+}
+.section-404 .number::after {
+  left: 15%;
+}
+@media (max-width: 1024px) {
+  .section-404 .number::before {
+    right: 10%;
+  }
+  .section-404 .number::after {
+    left: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-404 .number::before,
+  .section-404 .number::after {
+    display: none;
+  }
+}
+
+.section-404 .return-home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  text-decoration: none;
+  margin: 0px auto;
+  color: white !important;
+  background-color: var(--primary-color);
+  font-size: 30px;
+  padding: 2px 30px;
+  border-radius: 40px;
+}
+@media (max-width: 425px) {
+  .section-404 .return-home-page {
+    font-size: 20px;
+  }
+}
+.section-404 img {
+  margin: -50px auto 0;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 425px) {
+  .section-404 img {
+    margin: 0;
+    width: 100%;
+  }
+}
+/*************************** End 404 page *****************************/
