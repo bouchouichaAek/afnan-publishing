@@ -1609,6 +1609,7 @@ header .single-artical {
   border-radius: 35px;
   /* height: 315vh !important; */
 }
+
 @media (max-width: 425px) {
   .dashboard .bg-white {
     height: 100% !important;
@@ -1652,6 +1653,7 @@ header .single-artical {
 @media (max-width: 768px) {
   .dashboard .dashboard-side-bar .links ul {
     margin-top: 50px;
+    padding-right: 50%;
   }
 }
 @media (max-width: 768px) {
@@ -1659,21 +1661,22 @@ header .single-artical {
     padding: 0;
     border-radius: 50%;
     font-size: 15px;
-    margin-right: -5px;
   }
 }
 @media (max-width: 425px) {
   .dashboard .dashboard-side-bar .links ul {
     width: 100%;
-    margin: 0 !important;
+    padding-right: 0%;
+    padding-left: 0%;
   }
   .dashboard .dashboard-side-bar .links ul li {
     margin-bottom: 25px !important;
-    font-size: 22px !important;
-    padding: 10px 40px !important;
+    /* font-size: 28px !important; */
     border-radius: 0 !important;
     transition-duration: 0.3s;
-    width: 100%;
+    margin: 0;
+    padding-right: 20px;
+    text-align: start;
   }
 }
 @media (max-width: 768px) {
@@ -1685,12 +1688,12 @@ header .single-artical {
   .dashboard .dashboard-side-bar .links ul li a span {
     display: inline-block;
     margin-right: 10px;
-    font-size: 18px;
+    font-size: 25px;
   }
 }
 @media (max-width: 320px) {
   .dashboard .dashboard-side-bar .links ul li a span {
-    font-size: 16px;
+    /* font-size: 16px; */
   }
 }
 .dashboard .dashboard-side-bar .links ul li i {
@@ -1707,7 +1710,7 @@ header .single-artical {
 }
 @media (max-width: 320px) {
   .dashboard .dashboard-side-bar .links ul li i {
-    font-size: 15px !important;
+    font-size: 25px !important;
   }
 }
 .dashboard .dashboard-side-bar .links ul li.active {
@@ -1784,7 +1787,7 @@ header .single-artical {
 @media (max-width: 425px) {
   .dashboard .header .user-noti .return-to-site {
     padding: 5px 15px;
-    font-size: 13px;
+    font-size: 18px;
   }
 }
 
@@ -2314,7 +2317,7 @@ header .single-artical {
   }
 }
 
-.section-404 .return-home-page {
+.section-404 .home-page {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2328,12 +2331,12 @@ header .single-artical {
   border-radius: 40px;
 }
 @media (max-width: 425px) {
-  .section-404 .return-home-page {
+  .section-404 .home-page {
     font-size: 20px;
   }
 }
 .section-404 img {
-  margin: -50px auto 0;
+  margin: 0px auto;
   width: 600px;
   display: flex;
   justify-content: center;
