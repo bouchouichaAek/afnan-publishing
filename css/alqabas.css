@@ -67,6 +67,12 @@ ul {
 .links li:hover > a {
   color: var(--second-color) !important;
 }
+@media (max-width: 425px) {
+  .icons {
+    flex-direction: column !important;
+  }
+}
+
 .icons svg {
   border: 1px solid black;
   border-radius: 50%;
@@ -86,6 +92,12 @@ ul {
 .icons .sign-up a {
   border: 1px solid var(--second-color);
   color: var(--second-color) !important;
+}
+@media (max-width: 768px) {
+  .icons .cart {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 .icons .cart span {
   position: absolute;
