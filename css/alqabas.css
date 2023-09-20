@@ -17,8 +17,13 @@
 }
 
 :root {
-  --primary-color: #724215;
-  --second-color: #a6794f;
+  /* --primary-color: #724215;
+  --second-color: #a6794f; */
+  /* --primary-color: #ac4403; */
+  /* --primary-color: #f27220;
+  --second-color: #66b6c2; */
+  --primary-color: #211450;
+  --second-color: #f3bf00;
 }
 
 html {
@@ -58,27 +63,42 @@ ul {
 .links ul li a {
   font-weight: 600;
 }
-.links ul li a.active,
-.links ul li:hover > a {
-  color: var(--primary-color) !important;
+.links li a.active,
+.links li:hover > a {
+  color: var(--second-color) !important;
 }
 .icons svg {
   border: 1px solid black;
   border-radius: 50%;
   padding: 8px;
 }
+.icons .sign a {
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  padding: 5px 20px !important;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+.icons .sign-in a {
+  background-color: var(--second-color);
+  color: white !important;
+}
+.icons .sign-up a {
+  border: 1px solid var(--second-color);
+  color: var(--second-color) !important;
+}
 .icons .cart span {
   position: absolute;
   top: 0;
   right: -2px;
-  background-color: var(--primary-color);
+  background-color: var(--second-color);
   border-radius: 50%;
   color: white;
   padding: 1px 5px;
   font-size: 10px;
 }
 a.logo img {
-  width: 30px;
+  width: 50px;
 }
 
 @media (max-width: 768px) {
@@ -116,7 +136,7 @@ header .main {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(114, 66, 21, 0.5);
+  background-color: rgba(33, 20, 80, 0.671);
 }
 .landing .landing-content .last-releases-books {
   margin-top: 2rem;
@@ -294,7 +314,7 @@ header .main {
 .release .swiper-slide .price {
   width: fit-content;
   margin-right: auto;
-  background-color: var(--primary-color);
+  background-color: var(--second-color);
   padding: 5px 20px;
   color: white;
   border-radius: 0 40px 40px 0;
@@ -331,7 +351,7 @@ header .main {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(114, 66, 21, 0.5);
+  background-color: rgba(33, 20, 80, 0.671);
 }
 .blooger-section .blooger .boxes {
   display: grid;
@@ -350,7 +370,7 @@ header .main {
 .blooger-section .blooger .category {
   margin-top: 20px;
   border-radius: 25px 0 0 25px;
-  background-color: var(--primary-color);
+  background-color: var(--second-color);
   width: 90px;
   color: white;
   padding: 2px 10px;
@@ -376,7 +396,7 @@ header .main {
 }
 .blooger-section .button {
   width: fit-content;
-  background-color: var(--primary-color);
+  background-color: var(--second-color);
   text-align: center;
   margin: 20px auto;
   padding: 10px 20px;
@@ -393,7 +413,7 @@ header .main {
   gap: 30px;
 }
 .our-values .box-header {
-  background-color: var(--second-color);
+  background-color: var(--primary-color);
   text-align: center;
 }
 .our-values .box-header i {
@@ -407,7 +427,7 @@ header .main {
 }
 .our-values .box-footer {
   margin-top: -18px;
-  background-color: var(--primary-color);
+  background-color: var(--second-color);
   text-align: center;
 }
 .our-values .box-footer h2 {
@@ -459,7 +479,7 @@ header .main {
   text-align: end;
 }
 .subscriber .container .input input[type="submit"] {
-  background-color: var(--primary-color);
+  background-color: var(--second-color);
   color: white;
   border: none;
   padding: 12px 35px;
@@ -628,7 +648,7 @@ header .our-books {
 .books-release-content .button {
   margin: 30px auto;
   width: fit-content;
-  background-color: var(--primary-color);
+  background-color: var(--second-color);
   padding: 5px 15px;
   color: white;
 }
@@ -753,7 +773,7 @@ header .blooger {
 .articals-section .category {
   margin-top: 20px;
   border-radius: 25px 0 0 25px;
-  background-color: var(--primary-color);
+  background-color: var(--second-color);
   width: 90px;
   color: white;
   padding: 2px 10px;
@@ -819,7 +839,7 @@ header .contact-us {
   gap: 30px;
 }
 .conatct-info .box-header {
-  background-color: var(--second-color);
+  background-color: var(--primary-color);
   text-align: center;
 }
 .conatct-info .box-header i {
@@ -833,7 +853,7 @@ header .contact-us {
 }
 .conatct-info .box-footer {
   margin-top: -18px;
-  background-color: var(--primary-color);
+  background-color: var(--second-color);
   text-align: center;
 }
 .conatct-info .box-footer h2 {
@@ -905,6 +925,8 @@ header .contact-us {
 }
 .book-info .book-info-details .text .description {
   margin-top: 100px;
+  text-align: justify;
+  text-justify: auto;
 }
 @media (max-width: 768px) {
   .book-info .book-info-details .text .description {
@@ -1024,6 +1046,8 @@ header .contact-us {
 }
 .book-info .tabs .tab-content .text {
   font-size: 18px;
+  text-align: justify;
+  text-justify: auto;
 }
 .book-info .tabs .tab-content .text .alert-primary {
   background-color: var(--primary-color);
@@ -1211,6 +1235,13 @@ header .single-artical {
 }
 
 /* Start Artical Section */
+.artical-section .artical-body {
+  text-align: justify;
+  text-justify: auto;
+}
+.artical-section .artical-body p {
+  line-height: 1.7 !important;
+}
 .artical-section .publish-artcial {
   color: var(--primary-color);
 }
@@ -1334,7 +1365,7 @@ header .single-artical {
 }
 .sign-in .form .checkbox-submit input[type="submit"] {
   font-size: 18px;
-  background-color: var(--primary-color);
+  background-color: var(--second-color);
   color: white;
   border: none;
   padding: 5px 30px;

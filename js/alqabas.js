@@ -62,3 +62,29 @@ var swiper1 = new Swiper(".swiper2", {
     prevEl: ".swiper-button-prev2",
   },
 });
+
+buttons_add = document.querySelectorAll(
+  ".book-info .add-to-cart .quntity button.plus"
+);
+buttons_min = document.querySelectorAll(
+  ".book-info .add-to-cart .quntity button.mins"
+);
+
+if (/single-book/.test(window.location.href)) {
+  buttons_add.forEach((btn) => {
+    btn.onclick = (e) => {
+      e.preventDefault();
+      e.target.nextElementSibling.value++;
+    };
+  });
+  buttons_min.forEach((btn) => {
+    btn.onclick = (e) => {
+      e.preventDefault();
+      if (e.target.previousElementSibling.value == 1) {
+        e.target.previousElementSibling.value = 1;
+      } else {
+        e.target.previousElementSibling.value--;
+      }
+    };
+  });
+}
