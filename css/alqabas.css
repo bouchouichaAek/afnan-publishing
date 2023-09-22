@@ -1,27 +1,13 @@
 /* Start Globle Rules */
 
-@font-face {
-  font-family: JF Flat Regular;
-  src: url(../fonts/JF-Flat-Regular.ttf);
-
-  font-weight: bolder;
-  font-style: normal;
-}
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /* font-family: JF Flat Regular, Segoe UI, Tahoma, Geneva, Verdana, sans-serif; */
   font-family: "cairo", sans-serif;
 }
 
 :root {
-  /* --primary-color: #724215;
-  --second-color: #a6794f; */
-  /* --primary-color: #ac4403; */
-  /* --primary-color: #f27220;
-  --second-color: #66b6c2; */
   --primary-color: #211450;
   --second-color: #f3bf00;
 }
@@ -79,7 +65,6 @@ ul {
   padding: 8px;
 }
 .icons .sign a {
-  /* border: 1px solid black; */
   border-radius: 10px;
   padding: 5px 20px !important;
   margin-left: 10px;
@@ -318,7 +303,7 @@ header .main {
 .release .swiper-slide .categiory {
   margin-top: 10px;
   margin-bottom: 10px;
-  color: var(--primary-color);
+  color: var(--second-color);
 }
 .release .swiper-slide .title {
   margin-bottom: 30px;
@@ -348,9 +333,6 @@ header .main {
 /* Start Blooger */
 .blooger-section .blooger {
   width: 100%;
-  /* height: 100vh; */
-  /* padding-top: 150px;
-  padding-bottom: 150px; */
   background-image: url(../img/blooger.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -383,9 +365,9 @@ header .main {
   margin-top: 20px;
   border-radius: 25px 0 0 25px;
   background-color: var(--second-color);
-  width: 90px;
+  width: fit-content;
   color: white;
-  padding: 2px 10px;
+  padding: 4px 12px;
   text-align: start;
 }
 .blooger-section .blooger .title {
@@ -483,8 +465,6 @@ header .main {
   width: 350px;
   border: 1px solid black;
   border-left: none;
-  /* border-bottom: 1px solid black;
-  border-top: 1px solid black; */
 }
 
 .subscriber .container .input input[type="email"]::placeholder {
@@ -582,8 +562,7 @@ header .our-books {
 /* End Filters */
 
 /* Start Books Release */
-.release-books {
-}
+
 .release-books .header {
   background-color: var(--primary-color);
 }
@@ -599,8 +578,7 @@ header .our-books {
     margin-bottom: 15px;
   }
 }
-.books-release-content {
-}
+
 .books-release-content .boxes {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -618,7 +596,7 @@ header .our-books {
   top: 15px;
   left: 15px;
   font-size: 25px;
-  color: #7242159a;
+  color: #2114507b;
   cursor: pointer;
 }
 .books-release-content .boxes .box i.liked {
@@ -631,7 +609,7 @@ header .our-books {
 .books-release-content .boxes .box .categiory {
   margin-top: 10px;
   margin-bottom: 10px;
-  color: var(--primary-color);
+  color: var(--second-color);
 }
 .books-release-content .boxes .box .title {
   margin-bottom: 30px;
@@ -673,9 +651,9 @@ header .our-books {
 header .publish-your-book {
   background-image: url(../img/publish-your-book.jpg);
 }
+
 /* Start info */
-.start-info {
-}
+
 .start-info .descrption {
   width: 750px;
   font-size: 25px;
@@ -705,8 +683,7 @@ header .publish-your-book {
 /* End info */
 
 /* Start Form  */
-.form {
-}
+
 .form .title {
   width: fit-content;
   color: var(--primary-color);
@@ -756,6 +733,22 @@ header .publish-your-book {
 .form form .box textarea {
   height: 150px;
 }
+.form form .box.btn {
+  padding: 0;
+  margin: 30px 0;
+  border: none;
+  cursor: auto;
+}
+.form form .box.btn .publish-your-book-btn {
+  width: fit-content;
+  padding: 5px 20px;
+  margin-right: auto;
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  border-radius: 40px;
+  outline: none;
+}
 /* End Form  */
 
 /*************************** End Publish Your Book *****************************/
@@ -786,7 +779,7 @@ header .blooger {
   margin-top: 20px;
   border-radius: 25px 0 0 25px;
   background-color: var(--second-color);
-  width: 90px;
+  width: fit-content;
   color: white;
   padding: 2px 10px;
   text-align: start;
@@ -878,8 +871,7 @@ header .contact-us {
 /*************************** End contact us *****************************/
 
 /*************************** Start single-book *****************************/
-.book-info {
-}
+
 .book-info .big-title-section {
   background-color: var(--primary-color);
 }
@@ -1007,9 +999,8 @@ header .contact-us {
     padding: 5px 10px;
   }
 }
-.book-info .tabs {
-}
-@media (max-width: 425px) {
+
+@media (max-width: 426px) {
   .book-info .tabs {
     flex-direction: column;
     align-items: center !important;
@@ -1123,14 +1114,11 @@ header .contact-us {
   justify-content: start;
   flex-direction: row-reverse;
 }
-.comments .write-comment form .box-comment .rating-stars label {
-}
 
 .comments .write-comment form .box-comment .rating-stars > input {
   display: none;
 }
-.comments .write-comment form .box-comment .rating-stars > label {
-}
+
 .comments .write-comment form .box-comment .rating-stars > label::before {
   display: block;
   content: "\f005";
@@ -1177,7 +1165,7 @@ header .contact-us {
 .other-book .swiper-slide .categiory {
   margin-top: 10px;
   margin-bottom: 10px;
-  color: var(--primary-color);
+  color: var(--second-color);
 }
 .other-book .swiper-slide .title {
   margin-bottom: 30px;
@@ -1208,9 +1196,7 @@ header .contact-us {
 /*************************** End single-book *****************************/
 
 /*************************** End single Artical *****************************/
-header .single-artical {
-  background-image: url(../img/nadariat-almoutakaf.jpg);
-}
+
 .single-artical .artical-info {
   text-align: center;
   width: 600px;
@@ -1284,17 +1270,11 @@ header .single-artical {
 
 /*************************** Start sign in page *****************************/
 /* Start sign in */
-.sign-in {
-}
+
 .sign-in .sign-in-header {
   width: fit-content;
   margin: 50px auto;
   text-align: center;
-}
-@media (max-width: 425px) {
-  .sign-in .sign-in-header {
-    /* margin: 0; */
-  }
 }
 
 .sign-in .sign-in-header .title {
@@ -1394,8 +1374,7 @@ header .single-artical {
     font-size: 12px;
   }
 }
-.sign-in .login {
-}
+
 .sign-in .login a {
   color: var(--primary-color) !important;
 }
@@ -1408,8 +1387,7 @@ header .single-artical {
 /*************************** End sign in page *****************************/
 
 /*************************** Start My Profile page *****************************/
-.my-profile {
-}
+
 .my-profile .slid-bar {
   background-color: var(--primary-color);
   color: white;
@@ -1567,7 +1545,7 @@ header .single-artical {
   margin-top: 20px;
   border-radius: 25px 0 0 25px;
   background-color: var(--primary-color);
-  width: 90px;
+  width: fit-content;
   color: white;
   padding: 2px 10px;
   text-align: start;
@@ -1614,7 +1592,7 @@ header .single-artical {
 .my-favorites-books .books .boxes .box .categiory {
   margin-top: 10px;
   margin-bottom: 10px;
-  color: var(--primary-color);
+  color: var(--second-color);
 }
 .my-favorites-books .books .boxes .box .title {
   margin-bottom: 30px;
@@ -1658,8 +1636,7 @@ header .single-artical {
     height: 100% !important;
   }
 }
-.dashboard .bgdashboard-side-bar {
-}
+
 .dashboard .dashboard-side-bar .logo img {
   width: 150px;
 }
@@ -1734,11 +1711,7 @@ header .single-artical {
     font-size: 25px;
   }
 }
-@media (max-width: 320px) {
-  .dashboard .dashboard-side-bar .links ul li a span {
-    /* font-size: 16px; */
-  }
-}
+
 .dashboard .dashboard-side-bar .links ul li i {
   margin-left: 10px;
   font-size: 30px !important;
@@ -1824,7 +1797,7 @@ header .single-artical {
   font-size: 15px;
   font-weight: bold;
   text-decoration: none;
-  background-color: var(--primary-color);
+  background-color: var(--second-color);
   border-radius: 40px;
 }
 @media (max-width: 425px) {
@@ -1838,7 +1811,7 @@ header .single-artical {
   position: absolute;
   top: -10px;
   right: 8px;
-  background-color: var(--primary-color);
+  background-color: var(--second-color);
   color: white;
   padding: 1px 5px;
   font-size: 13px;
@@ -1852,11 +1825,9 @@ header .single-artical {
 }
 @media (max-width: 320px) {
   .dashboard .header .user-noti i {
-    /* padding: 5px 15px; */
     font-size: 15px;
   }
   .dashboard .header .user-noti .return-to-site {
-    /* padding: 5px 15px; */
     font-size: 12px;
   }
   .dashboard .header .user-noti a span {
@@ -1924,8 +1895,6 @@ header .single-artical {
   font-weight: bold;
 }
 @media (max-width: 425px) {
-  .dashboard .overview .boxes .box img {
-  }
   .dashboard .overview .boxes .box .title {
     font-size: 24px;
   }
@@ -1976,38 +1945,38 @@ header .single-artical {
 .dashboard .table-responsive .table tr:not(:first-of-type) th {
   font-weight: normal !important;
 }
-.dashboard .table-responsive .table a {
+.dashboard .table a {
   padding: 0px 20px;
   color: white !important;
   border-radius: 40px;
   text-decoration: none;
 }
-.dashboard .users-list .table-responsive .table th {
-}
-.dashboard .table-responsive .table .edit {
+
+.dashboard .table .edit {
   background-color: #098015 !important;
 }
-.dashboard .table-responsive .table .delete {
+.dashboard .table .delete {
   background-color: #d22323;
 }
-.dashboard .table-responsive .table .publiched,
-.dashboard .table-responsive .table .activated {
+.dashboard .table .publiched,
+.dashboard .table .activated {
   color: #098015;
 }
-.dashboard .table-responsive .table .pending {
+.dashboard .table .pending {
   color: #ff7b00;
 }
-.dashboard .table-responsive .table .rejected,
-.dashboard .table-responsive .table .deactivated {
+.dashboard .table .rejected,
+.dashboard .table .deactivated {
   color: #d22323;
 }
-.dashboard .articals .table-responsive .table a {
+.dashboard .section-box.articals .table a {
   padding: 1px 20px;
   border: none;
   color: white !important;
   border-radius: 40px;
   background-color: var(--primary-color);
   text-decoration: none;
+  width: fit-content;
 }
 .dashboard form .button {
   margin-top: 50px;
@@ -2020,7 +1989,7 @@ header .single-artical {
   border-radius: 40px;
 }
 .dashboard form .button .save {
-  background-color: var(--primary-color);
+  background-color: var(--second-color);
 }
 .dashboard form .button .cancel {
   background-color: #747474;
@@ -2059,7 +2028,7 @@ header .single-artical {
   width: 100px;
 }
 .cart-secton .cart-items .content-cart-items .box .item-detail .category {
-  color: var(--primary-color);
+  color: var(--second-color);
 }
 .cart-secton .cart-items .content-cart-items .box .item-detail .price {
   color: var(--primary-color);
@@ -2069,8 +2038,7 @@ header .single-artical {
   color: #737373;
   text-align: end;
 }
-.cart-secton .cart-items .content-cart-items .box .quntity-price {
-}
+
 .cart-secton .cart-items .content-cart-items .box .quntity-price .quntity {
   position: relative;
   margin-right: 30px;
@@ -2170,8 +2138,7 @@ header .single-artical {
 
 /*************************** Start Checkout page *****************************/
 /* Start Checkout */
-.checkout {
-}
+
 .checkout {
   margin: 100px 0;
 }
@@ -2209,7 +2176,7 @@ header .single-artical {
   width: 100px;
 }
 .checkout .cart-items .content-cart-items .box .item-detail .category {
-  color: var(--primary-color);
+  color: var(--second-color);
 }
 .checkout .cart-items .content-cart-items .box .item-detail .price {
   color: var(--primary-color);
@@ -2219,8 +2186,7 @@ header .single-artical {
   color: #737373;
   text-align: end;
 }
-.checkout .cart-items .content-cart-items .box .quntity-price {
-}
+
 .checkout .cart-items .content-cart-items .box .quntity-price .quntity {
   position: relative;
   margin-right: 30px;
@@ -2291,12 +2257,9 @@ header .single-artical {
 .checkout .payment-methods .content-payment-methods .logo .img {
   width: 40px;
 }
-/* .checkout .discount-price {
-  width: 100%;
-} */
+
 .checkout .discount-price form {
   width: 100%;
-  /* margin-right: -160px; */
 }
 .checkout .discount-price form input[type="text"] {
   width: 70%;

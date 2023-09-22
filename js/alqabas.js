@@ -88,3 +88,28 @@ if (/single-book/.test(window.location.href)) {
     };
   });
 }
+
+buttons_add_cart = document.querySelectorAll(
+  ".cart-secton .quntity-price .quntity button.plus"
+);
+buttons_min_cart = document.querySelectorAll(
+  ".cart-secton .quntity-price .quntity button.mins"
+);
+if (/cart/.test(window.location.href)) {
+  buttons_add_cart.forEach((btn) => {
+    btn.onclick = (e) => {
+      e.preventDefault();
+      e.target.nextElementSibling.value++;
+    };
+  });
+  buttons_min_cart.forEach((btn) => {
+    btn.onclick = (e) => {
+      e.preventDefault();
+      if (e.target.previousElementSibling.value == 1) {
+        e.target.previousElementSibling.value = 1;
+      } else {
+        e.target.previousElementSibling.value--;
+      }
+    };
+  });
+}
