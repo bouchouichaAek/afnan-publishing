@@ -10,6 +10,7 @@
 :root {
   --primary-color: #211450;
   --second-color: #f3bf00;
+  --overlay-color: #211450ab;
 }
 
 html {
@@ -133,7 +134,7 @@ header .main {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(33, 20, 80, 0.671);
+  background-color: var(--overlay-color);
 }
 .landing .landing-content .last-releases-books {
   margin-top: 2rem;
@@ -298,7 +299,7 @@ header .main {
 }
 
 .release .swiper-slide img {
-  width: 75%;
+  width: 65%;
   height: 350px;
 }
 .release .swiper-slide .categiory {
@@ -346,7 +347,7 @@ header .main {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(33, 20, 80, 0.671);
+  background-color: var(--overlay-color);
 }
 .blooger-section .blooger .boxes {
   display: grid;
@@ -440,6 +441,7 @@ header .main {
 }
 .subscriber .label i {
   font-size: 100px;
+  color: var(--primary-color);
 }
 .subscriber .label .text h1 {
   color: var(--primary-color);
@@ -605,8 +607,8 @@ header .our-books {
 }
 
 .books-release-content .boxes .box img {
-  width: 75%;
-  height: 350px;
+  width: 70%;
+  height: 300px;
 }
 .books-release-content .boxes .box .categiory {
   margin-top: 10px;
