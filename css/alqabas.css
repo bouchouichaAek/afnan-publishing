@@ -298,7 +298,8 @@ header .main {
 }
 
 .release .swiper-slide img {
-  width: 70%;
+  width: 75%;
+  height: 350px;
 }
 .release .swiper-slide .categiory {
   margin-top: 10px;
@@ -604,7 +605,8 @@ header .our-books {
 }
 
 .books-release-content .boxes .box img {
-  width: 70%;
+  width: 75%;
+  height: 350px;
 }
 .books-release-content .boxes .box .categiory {
   margin-top: 10px;
@@ -1160,7 +1162,8 @@ header .contact-us {
 }
 
 .other-book .swiper-slide img {
-  width: 70%;
+  width: 75%;
+  height: 400px;
 }
 .other-book .swiper-slide .categiory {
   margin-top: 10px;
